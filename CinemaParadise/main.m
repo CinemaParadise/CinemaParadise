@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
+#import <KakaoOpenSDK/KakaoOpenSDK.h>
 
 int main(int argc, char * argv[]) {
     @autoreleasepool {

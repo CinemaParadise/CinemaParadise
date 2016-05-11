@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		69A9339B1CE37CEA00126994 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A9339A1CE37CEA00126994 /* MainViewController.m */; };
+		69FA9D491CE240960008F5C8 /* KakaoOpenSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69FA9D481CE240960008F5C8 /* KakaoOpenSDK.framework */; };
 		BA40239E1CE2170700C6C12A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BA40239D1CE2170700C6C12A /* main.m */; };
 		BA4023A11CE2170700C6C12A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4023A01CE2170700C6C12A /* AppDelegate.m */; };
 		BA4023A41CE2170700C6C12A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4023A31CE2170700C6C12A /* ViewController.m */; };
@@ -16,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		69A933991CE37CEA00126994 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		69A9339A1CE37CEA00126994 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		69FA9D481CE240960008F5C8 /* KakaoOpenSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KakaoOpenSDK.framework; path = CinemaParadise/KakaoOpenSDK.framework; sourceTree = "<group>"; };
 		BA4023991CE2170700C6C12A /* CinemaParadise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CinemaParadise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA40239D1CE2170700C6C12A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BA40239F1CE2170700C6C12A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -33,12 +38,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69FA9D491CE240960008F5C8 /* KakaoOpenSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		69FA9D4A1CE24E210008F5C8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				69FA9D481CE240960008F5C8 /* KakaoOpenSDK.framework */,
+			);
+			name = Frameworks;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		BA4023901CE2170700C6C12A = {
 			isa = PBXGroup;
 			children = (
@@ -62,10 +77,12 @@
 				BA4023A01CE2170700C6C12A /* AppDelegate.m */,
 				BA4023A21CE2170700C6C12A /* ViewController.h */,
 				BA4023A31CE2170700C6C12A /* ViewController.m */,
+				69A933991CE37CEA00126994 /* MainViewController.h */,
+				69A9339A1CE37CEA00126994 /* MainViewController.m */,
 				BA4023A51CE2170700C6C12A /* Main.storyboard */,
 				BA4023A81CE2170700C6C12A /* Assets.xcassets */,
 				BA4023AA1CE2170700C6C12A /* LaunchScreen.storyboard */,
-				BA4023AD1CE2170700C6C12A /* Info.plist */,
+				69FA9D4A1CE24E210008F5C8 /* Frameworks */,
 				BA40239C1CE2170700C6C12A /* Supporting Files */,
 			);
 			path = CinemaParadise;
@@ -74,6 +91,7 @@
 		BA40239C1CE2170700C6C12A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BA4023AD1CE2170700C6C12A /* Info.plist */,
 				BA40239D1CE2170700C6C12A /* main.m */,
 			);
 			name = "Supporting Files";
@@ -152,6 +170,7 @@
 				BA4023A41CE2170700C6C12A /* ViewController.m in Sources */,
 				BA4023A11CE2170700C6C12A /* AppDelegate.m in Sources */,
 				BA40239E1CE2170700C6C12A /* main.m in Sources */,
+				69A9339B1CE37CEA00126994 /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,8 +284,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CinemaParadise",
+				);
 				INFOPLIST_FILE = CinemaParadise/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				New_Setting = "";
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gracelilac.CinemaParadise;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -276,8 +301,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CinemaParadise",
+				);
 				INFOPLIST_FILE = CinemaParadise/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				New_Setting = "";
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gracelilac.CinemaParadise;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -302,6 +333,7 @@
 				BA4023B21CE2170700C6C12A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

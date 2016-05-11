@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import <KakaoOpenSDK/KakaoOpenSDK.h>
 
 @interface ViewController ()
 
@@ -16,6 +17,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    KOLoginButton *loginButton = [[KOLoginButton alloc] initWithFrame:CGRectMake(0, 0, 300, 100)];
+    [self.view addSubview:loginButton];
     
 }
 

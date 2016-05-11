@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>CFEAFD79-C2C1-49C6-A22D-F561E0DD9FCA</string>
+	<key>IDESourceControlProjectName</key>
+	<string>CinemaParadise</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>BADD1E7EE8EC92AA99B8EA8E86D2F92D564C0239</key>
+		<string>https://github.com/CinemaParadise/CinemaParadise.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>CinemaParadise.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>BADD1E7EE8EC92AA99B8EA8E86D2F92D564C0239</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/CinemaParadise/CinemaParadise.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>BADD1E7EE8EC92AA99B8EA8E86D2F92D564C0239</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>BADD1E7EE8EC92AA99B8EA8E86D2F92D564C0239</string>
+			<key>IDESourceControlWCCName</key>
+			<string>CinemaParadise</string>
+		</dict>
+	</array>
+</dict>
+</plist>
