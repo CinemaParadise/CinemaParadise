@@ -10,28 +10,37 @@
 
 @interface MainViewController ()
 
+@property (nonatomic, strong) UIImageView *posterImageView;
+
 @end
 
 @implementation MainViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+   
+    self.posterImageView = [[UIImageView alloc] initWithFrame:CGRectZero];
+    self.posterImageView.image = [UIImage imageNamed:@"movie_image"];
+    
+    [self.view addSubview:self.posterImageView];
+    
+    [self setupConstraints];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)setupConstraints {
+    NSDictionary *views = @{@"imageView" : _posterImageView};
+    
+    self.posterImageView.translatesAutoresizingMaskIntoConstraints = NO;
+    
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.view attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:self.posterImageView attribute:NSLayoutAttributeLeft multiplier:1 constant:0]];
+    
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.view attribute:NSLayoutAttributeRight relatedBy:NSLayoutRelationEqual toItem:self.posterImageView attribute:NSLayoutAttributeRight multiplier:1 constant:0]];
+    
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.view attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self.posterImageView attribute:NSLayoutAttributeTop multiplier:1 constant:0]];
+    
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.posterImageView attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1 constant:450]];
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
