@@ -11,6 +11,7 @@
 		69A933A71CE4D78600126994 /* SearchingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A933A61CE4D78600126994 /* SearchingViewController.m */; };
 		69A933AA1CE4D7CA00126994 /* EnrollTicketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A933A91CE4D7CA00126994 /* EnrollTicketViewController.m */; };
 		69A933AD1CE4D81100126994 /* UserSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A933AC1CE4D81100126994 /* UserSettingViewController.m */; };
+		69A933B91CE79F9200126994 /* UIButton+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A933B81CE79F9200126994 /* UIButton+Addition.m */; };
 		69FA9D491CE240960008F5C8 /* KakaoOpenSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69FA9D481CE240960008F5C8 /* KakaoOpenSDK.framework */; };
 		BA40239E1CE2170700C6C12A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BA40239D1CE2170700C6C12A /* main.m */; };
 		BA4023A11CE2170700C6C12A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4023A01CE2170700C6C12A /* AppDelegate.m */; };
@@ -29,6 +30,8 @@
 		69A933A91CE4D7CA00126994 /* EnrollTicketViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnrollTicketViewController.m; sourceTree = "<group>"; };
 		69A933AB1CE4D81100126994 /* UserSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserSettingViewController.h; sourceTree = "<group>"; };
 		69A933AC1CE4D81100126994 /* UserSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserSettingViewController.m; sourceTree = "<group>"; };
+		69A933B71CE79F9200126994 /* UIButton+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Addition.h"; sourceTree = "<group>"; };
+		69A933B81CE79F9200126994 /* UIButton+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Addition.m"; sourceTree = "<group>"; };
 		69FA9D481CE240960008F5C8 /* KakaoOpenSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KakaoOpenSDK.framework; path = CinemaParadise/KakaoOpenSDK.framework; sourceTree = "<group>"; };
 		BA4023991CE2170700C6C12A /* CinemaParadise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CinemaParadise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA40239D1CE2170700C6C12A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -95,6 +98,8 @@
 				69A933A91CE4D7CA00126994 /* EnrollTicketViewController.m */,
 				69A933A51CE4D78600126994 /* SearchingViewController.h */,
 				69A933A61CE4D78600126994 /* SearchingViewController.m */,
+				69A933B71CE79F9200126994 /* UIButton+Addition.h */,
+				69A933B81CE79F9200126994 /* UIButton+Addition.m */,
 				BA4023A81CE2170700C6C12A /* Assets.xcassets */,
 				BA4023AA1CE2170700C6C12A /* LaunchScreen.storyboard */,
 				69FA9D4A1CE24E210008F5C8 /* Frameworks */,
@@ -189,6 +194,7 @@
 				69A933A71CE4D78600126994 /* SearchingViewController.m in Sources */,
 				69A933AD1CE4D81100126994 /* UserSettingViewController.m in Sources */,
 				69A9339B1CE37CEA00126994 /* MainViewController.m in Sources */,
+				69A933B91CE79F9200126994 /* UIButton+Addition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

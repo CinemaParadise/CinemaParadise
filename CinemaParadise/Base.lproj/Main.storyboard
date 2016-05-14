@@ -107,8 +107,18 @@
                                     <action selector="backButton:" destination="bvH-tr-kF3" eventType="touchUpInside" id="Imp-2u-et1"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="티켓 검색" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bko-sl-hSe">
+                                <rect key="frame" x="268" y="45" width="64" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bko-sl-hSe" firstAttribute="top" secondItem="dyp-Sd-9kh" secondAttribute="bottom" constant="25" id="DZl-Rz-zVH"/>
+                            <constraint firstItem="bko-sl-hSe" firstAttribute="centerX" secondItem="GGM-hH-wCJ" secondAttribute="centerX" id="yHn-KU-Wjf"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d5m-S1-7B1" userLabel="First Responder" sceneMemberID="firstResponder"/>
