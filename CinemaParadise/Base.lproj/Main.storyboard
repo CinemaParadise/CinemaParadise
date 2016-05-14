@@ -22,7 +22,8 @@
                                 <rect key="frame" x="256" y="285" width="88" height="30"/>
                                 <state key="normal" title="Login Button"/>
                                 <connections>
-                                    <segue destination="QCx-O0-LGy" kind="modal" id="0ZS-uy-mAE"/>
+                                    <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xVb-m1-Ci4"/>
+                                    <segue destination="QCx-O0-LGy" kind="modal" id="Z5H-jm-wWh"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -32,6 +33,9 @@
                             <constraint firstItem="iTR-ac-V56" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="L2q-NL-uCm"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="loginButton" destination="iTR-ac-V56" id="I1Y-wn-Y9u"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
