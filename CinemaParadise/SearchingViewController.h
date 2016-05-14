@@ -10,4 +10,7 @@
 
 @interface SearchingViewController : UIViewController
 
+- (IBAction)backButton:(id)sender;
+
+
 @end
