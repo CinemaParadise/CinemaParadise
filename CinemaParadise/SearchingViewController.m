@@ -19,11 +19,8 @@
     // Do any additional setup after loading the view.
 }
 
-
-
 - (IBAction)backButton:(id)sender {
-//    [self.navigationController popViewControllerAnimated:YES];
     [self dismissViewControllerAnimated:YES completion:nil];
-    
 }
+
 @end
