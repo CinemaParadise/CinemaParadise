@@ -10,6 +10,12 @@
 
 @interface SearchingViewController : UIViewController
 
+@property (nonatomic, strong) UIView *navigationView;
+@property (nonatomic, strong) UIButton *backButton;
+@property (nonatomic, strong) UILabel *titleLabel;
+
+@property (nonatomic, strong) UITableView *tableView;
+
 - (IBAction)backButton:(id)sender;
 
 
