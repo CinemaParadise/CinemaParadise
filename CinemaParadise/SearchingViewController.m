@@ -10,6 +10,8 @@
 
 @interface SearchingViewController ()
 
+
+
 @end
 
 @implementation SearchingViewController
@@ -41,29 +43,41 @@
     self.titleLabel.translatesAutoresizingMaskIntoConstraints = NO;
     [self.navigationView addSubview:self.titleLabel];
     
-    self.tableView = [[UITableView alloc] init];
-    self.tableView.backgroundColor = [UIColor greenColor];
-    self.tableView .translatesAutoresizingMaskIntoConstraints = NO;
-    [self.view addSubview: self.tableView];
+    
+    self.scrollView = [[UIScrollView alloc] init];
+    self.scrollView.backgroundColor = [UIColor greenColor];
+    self.scrollView.contentSize =  CGSizeMake(320, 800);
+    self.scrollView.translatesAutoresizingMaskIntoConstraints = NO;
+    [self.view addSubview:self.scrollView];
+
+    
+    self.view1 = [[UIView alloc] init];
+    self.view1.backgroundColor = [UIColor orangeColor];
+    self.view1.translatesAutoresizingMaskIntoConstraints = NO;
+    [self.scrollView addSubview:self.view1];
+    
+    
+    
 }
 
 - (void)setupConstraints {
     
     NSDictionary *views = @{
                             @"navigationView" : self.navigationView,
-                            @"tableView" : self.tableView,
+                            @"scrollView" : self.scrollView,
                             @"backButton" : self.backButton,
-                            @"titleLabel" : self.titleLabel
+                            @"titleLabel" : self.titleLabel,
+                            @"view1" : self.view1
                             };
     
     [self.view addConstraints:
-     [NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[navigationView(==50)]-0-[tableView]-0-|" options:0 metrics:nil views:views]];
+     [NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[navigationView(==50)]-0-[scrollView]-0-|" options:0 metrics:nil views:views]];
     
     [self.view addConstraints:
      [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[navigationView]-0-|" options:0 metrics:nil views:views]];
 
     [self.view addConstraints:
-     [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[tableView]-0-|" options:0 metrics:nil views:views]];
+     [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[scrollView]-0-|" options:0 metrics:nil views:views]];
     
     [self.navigationView addConstraint:
      [NSLayoutConstraint constraintWithItem:self.navigationView attribute:NSLayoutAttributeCenterY relatedBy:NSLayoutRelationEqual toItem:self.backButton attribute:NSLayoutAttributeCenterY multiplier:1 constant:0]];
@@ -76,6 +90,16 @@
 
     [self.navigationView addConstraint:
      [NSLayoutConstraint constraintWithItem:self.navigationView attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:self.titleLabel attribute:NSLayoutAttributeCenterX multiplier:1 constant:0]];
+
+    
+    
+    [self.scrollView addConstraints:
+     [NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[view1(==50)]-0-|" options:0 metrics:nil views:views]];
+    
+    [self.scrollView addConstraints:
+     [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[view1(==50)]-0-|" options:0 metrics:nil views:views]];
+    
+    
 }
 
 @end
