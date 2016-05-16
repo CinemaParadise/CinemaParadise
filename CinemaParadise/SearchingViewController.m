@@ -39,7 +39,7 @@
     
     self.scrollView = [[UIScrollView alloc] init];
     self.scrollView.backgroundColor = [UIColor colorWithRed:0.96 green:0.96 blue:0.96 alpha:1.00];
-    self.scrollView.contentSize =  CGSizeMake(320, 800);
+    self.scrollView.contentSize =  CGSizeMake(320, 1500);
     self.scrollView.translatesAutoresizingMaskIntoConstraints = NO;
     [self.view addSubview:self.scrollView];
 
@@ -70,6 +70,14 @@
     [self.scrollView addSubview:self.movieTypeView];
     
     
+    self.checkButton = [[UIButton alloc] init];
+    self.checkButton.backgroundColor = [UIColor blackColor];
+    [self.checkButton setTitle:@"티켓 찾기" forState:UIControlStateNormal];
+    [self.checkButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    self.checkButton.translatesAutoresizingMaskIntoConstraints = NO;
+    [self.view addSubview:self.checkButton];
+
+    
 }
 
 - (void)setupConstraints {
@@ -83,7 +91,8 @@
                             @"theaterView" : self.theaterView,
                             @"viewingDayView" : self.viewingDayView,
                             @"ticketCountView" : self.ticketCountView,
-                            @"movieTypeView" : self.movieTypeView
+                            @"movieTypeView" : self.movieTypeView,
+                            @"checkButton" : self.checkButton
                             };
     
     [self.view addConstraints:
@@ -169,6 +178,18 @@
     
     [self.scrollView addConstraints:
      [NSLayoutConstraint constraintsWithVisualFormat:@"V:[ticketCountView]-20-[movieTypeView(==100)]" options:0 metrics:nil views:views]];
+
+    
+    /* checkButton constraint */
+    
+    [self.view addConstraint:
+     [NSLayoutConstraint constraintWithItem:self.view attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:self.checkButton attribute:NSLayoutAttributeCenterX multiplier:1 constant:0]];
+    
+    [self.view addConstraints:
+     [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[checkButton]-0-|" options:0 metrics:nil views:views]];
+    
+    [self.view addConstraints:
+     [NSLayoutConstraint constraintsWithVisualFormat:@"V:[checkButton(==60)]-|" options:0 metrics:nil views:views]];
 
 }
 
