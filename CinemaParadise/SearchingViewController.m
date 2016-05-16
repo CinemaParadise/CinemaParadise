@@ -49,6 +49,25 @@
     self.titleView.translatesAutoresizingMaskIntoConstraints = NO;
     [self.scrollView addSubview:self.titleView];
     
+    self.theaterView = [[UIView alloc] init];
+    self.theaterView.backgroundColor = [UIColor whiteColor];
+    self.theaterView.translatesAutoresizingMaskIntoConstraints = NO;
+    [self.scrollView addSubview:self.theaterView];
+    
+    self.viewingDayView = [[UIView alloc] init];
+    self.viewingDayView.backgroundColor = [UIColor whiteColor];
+    self.viewingDayView.translatesAutoresizingMaskIntoConstraints = NO;
+    [self.scrollView addSubview:self.viewingDayView];
+    
+    self.ticketCountView = [[UIView alloc] init];
+    self.ticketCountView.backgroundColor = [UIColor whiteColor];
+    self.ticketCountView.translatesAutoresizingMaskIntoConstraints = NO;
+    [self.scrollView addSubview:self.ticketCountView];
+    
+    self.movieTypeView = [[UIView alloc] init];
+    self.movieTypeView.backgroundColor = [UIColor whiteColor];
+    self.movieTypeView.translatesAutoresizingMaskIntoConstraints = NO;
+    [self.scrollView addSubview:self.movieTypeView];
     
     
 }
@@ -60,7 +79,11 @@
                             @"scrollView" : self.scrollView,
                             @"backButton" : self.backButton,
                             @"titleLabel" : self.titleLabel,
-                            @"titleView" : self.titleView
+                            @"titleView" : self.titleView,
+                            @"theaterView" : self.theaterView,
+                            @"viewingDayView" : self.viewingDayView,
+                            @"ticketCountView" : self.ticketCountView,
+                            @"movieTypeView" : self.movieTypeView
                             };
     
     [self.view addConstraints:
@@ -79,20 +102,74 @@
      [NSLayoutConstraint constraintWithItem:self.navigationView attribute:NSLayoutAttributeCenterY relatedBy:NSLayoutRelationEqual toItem:self.titleLabel attribute:NSLayoutAttributeCenterY multiplier:1 constant:0]];
 
     [self.navigationView addConstraints:
-     [NSLayoutConstraint constraintsWithVisualFormat:@"V:[backButton(==30)]" options:0 metrics:nil views:views]];
+     [NSLayoutConstraint constraintsWithVisualFormat:@"V:[backButton(==25)]" options:0 metrics:nil views:views]];
     
     [self.navigationView addConstraints:
-     [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-15-[backButton(==30)]" options:0 metrics:nil views:views]];
+     [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-15-[backButton(==25)]" options:0 metrics:nil views:views]];
 
     [self.navigationView addConstraint:
      [NSLayoutConstraint constraintWithItem:self.navigationView attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:self.titleLabel attribute:NSLayoutAttributeCenterX multiplier:1 constant:0]];
 
     
-    [self.scrollView addConstraints:
-     [NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[titleView(==50)]-0-|" options:0 metrics:nil views:views]];
+    /* titleVeiw constraint */
+    
+    [self.scrollView addConstraint:
+     [NSLayoutConstraint constraintWithItem:self.scrollView attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:self.titleView attribute:NSLayoutAttributeCenterX multiplier:1 constant:0]];
     
     [self.scrollView addConstraints:
-     [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[titleView(==50)]-0-|" options:0 metrics:nil views:views]];
+     [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-20-[titleView]-20-|" options:0 metrics:nil views:views]];
+    
+    [self.scrollView addConstraints:
+     [NSLayoutConstraint constraintsWithVisualFormat:@"V:|-20-[titleView(==100)]-10-|" options:0 metrics:nil views:views]];
+
+    
+    /* theaterView constraint */
+    
+    [self.scrollView addConstraint:
+     [NSLayoutConstraint constraintWithItem:self.scrollView attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:self.theaterView attribute:NSLayoutAttributeCenterX multiplier:1 constant:0]];
+    
+    [self.scrollView addConstraints:
+     [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-20-[theaterView]-20-|" options:0 metrics:nil views:views]];
+    
+    [self.scrollView addConstraints:
+     [NSLayoutConstraint constraintsWithVisualFormat:@"V:[titleView]-20-[theaterView(==100)]" options:0 metrics:nil views:views]];
+    
+    /* viewingDayView constraint */
+    
+    [self.scrollView addConstraint:
+     [NSLayoutConstraint constraintWithItem:self.scrollView attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:self.viewingDayView attribute:NSLayoutAttributeCenterX multiplier:1 constant:0]];
+    
+    [self.scrollView addConstraints:
+     [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-20-[viewingDayView]-20-|" options:0 metrics:nil views:views]];
+    
+    [self.scrollView addConstraints:
+     [NSLayoutConstraint constraintsWithVisualFormat:@"V:[theaterView]-20-[viewingDayView(==100)]" options:0 metrics:nil views:views]];
+
+    
+    
+    /* ticketCountView constraint */
+    
+    [self.scrollView addConstraint:
+     [NSLayoutConstraint constraintWithItem:self.scrollView attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:self.ticketCountView attribute:NSLayoutAttributeCenterX multiplier:1 constant:0]];
+    
+    [self.scrollView addConstraints:
+     [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-20-[ticketCountView]-20-|" options:0 metrics:nil views:views]];
+    
+    [self.scrollView addConstraints:
+     [NSLayoutConstraint constraintsWithVisualFormat:@"V:[viewingDayView]-20-[ticketCountView(==100)]" options:0 metrics:nil views:views]];
+    
+    
+    /* movieTypeView constraint */
+    
+    [self.scrollView addConstraint:
+     [NSLayoutConstraint constraintWithItem:self.scrollView attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:self.movieTypeView attribute:NSLayoutAttributeCenterX multiplier:1 constant:0]];
+    
+    [self.scrollView addConstraints:
+     [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-20-[movieTypeView]-20-|" options:0 metrics:nil views:views]];
+    
+    [self.scrollView addConstraints:
+     [NSLayoutConstraint constraintsWithVisualFormat:@"V:[ticketCountView]-20-[movieTypeView(==100)]" options:0 metrics:nil views:views]];
+
 }
 
 
