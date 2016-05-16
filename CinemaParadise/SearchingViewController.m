@@ -38,14 +38,14 @@
     [self.navigationView addSubview:self.titleLabel];
     
     self.scrollView = [[UIScrollView alloc] init];
-    self.scrollView.backgroundColor = [UIColor greenColor];
+    self.scrollView.backgroundColor = [UIColor colorWithRed:0.96 green:0.96 blue:0.96 alpha:1.00];
     self.scrollView.contentSize =  CGSizeMake(320, 800);
     self.scrollView.translatesAutoresizingMaskIntoConstraints = NO;
     [self.view addSubview:self.scrollView];
 
     
     self.titleView = [[UIView alloc] init];
-    self.titleView.backgroundColor = [UIColor orangeColor];
+    self.titleView.backgroundColor = [UIColor whiteColor];
     self.titleView.translatesAutoresizingMaskIntoConstraints = NO;
     [self.scrollView addSubview:self.titleView];
     
