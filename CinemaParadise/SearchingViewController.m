@@ -95,13 +95,14 @@
     cell.title.text = searchingCategory.title;
     cell.selectedOptionLabel.text = searchingCategory.selectedOption;
     [cell.button setTitle:searchingCategory.buttonTitle forState:UIControlStateNormal];
+    [cell.button setTitleColor:[UIColor colorWithRed:0.34 green:0.53 blue:0.53 alpha:1.00] forState:UIControlStateNormal];
     
     return cell;
 }
 
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 140;
+    return 200;
 }
 
 
@@ -116,7 +117,7 @@
                             };
     
     [self.view addConstraints:
-     [NSLayoutConstraint constraintsWithVisualFormat:@"V:|[navigationView(==60)][tableView][checkButton(==60)]|" options:0 metrics:nil views:views]];
+     [NSLayoutConstraint constraintsWithVisualFormat:@"V:|[navigationView(==80)][tableView][checkButton(==60)]|" options:0 metrics:nil views:views]];
     
     [self.view addConstraints:
      [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[navigationView]-0-|" options:0 metrics:nil views:views]];
