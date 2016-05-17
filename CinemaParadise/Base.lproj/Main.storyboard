@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -71,20 +70,7 @@
                     <view key="view" contentMode="scaleToFill" id="O4z-L7-CgJ">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0nf-4P-FOH">
-                                <rect key="frame" x="277" y="451" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="4q9-Eb-dqm" kind="modal" id="w6l-PN-fcb"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="k8u-0v-HJE" firstAttribute="top" secondItem="0nf-4P-FOH" secondAttribute="bottom" constant="70" id="Mn9-hu-JtY"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="0nf-4P-FOH" secondAttribute="trailing" constant="257" id="mlF-nz-225"/>
-                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="Jl7-gQ-RWo"/>
                 </viewController>

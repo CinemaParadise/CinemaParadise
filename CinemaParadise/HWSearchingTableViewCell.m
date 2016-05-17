@@ -30,6 +30,7 @@
     [self addSubview:self.title];
     
     self.selectedOptionLabel = [[UILabel alloc] init];
+    self.selectedOptionLabel.font=[self.selectedOptionLabel.font fontWithSize:13];
     self.selectedOptionLabel.translatesAutoresizingMaskIntoConstraints = NO;
     [self addSubview:self.selectedOptionLabel];
     

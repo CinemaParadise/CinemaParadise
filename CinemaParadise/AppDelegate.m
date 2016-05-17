@@ -2,7 +2,7 @@
 //  AppDelegate.m
 //  CinemaParadise
 //
-//  Created by  조현호 on 2016. 5. 10..
+//  Created by  GraceLilac on 2016. 5. 10..
 //  Copyright © 2016년 GraceLilac. All rights reserved.
 //
 

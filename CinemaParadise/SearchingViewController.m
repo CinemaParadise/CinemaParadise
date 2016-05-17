@@ -25,6 +25,7 @@
 
 - (void)setupViewComponents {
     self.navigationView = [[UIView alloc] init];
+    self.navigationView.backgroundColor = [UIColor whiteColor];
     self.navigationView.translatesAutoresizingMaskIntoConstraints = NO;
     [self.view addSubview: self.navigationView];
     
@@ -62,6 +63,16 @@
     self.checkButton.translatesAutoresizingMaskIntoConstraints = NO;
     [self.view addSubview:self.checkButton];
 
+//    int abc = 5;
+//    UIView *view = [[UIView alloc] init];
+//    
+//    __weak typeof(self) weakSelf = self;
+//    [self presentViewController:[[SearchingViewController alloc] init] animated:YES completion:^(void){
+//        int cdf = abc;
+//        UIView *afsd = view;
+//        
+//        weakSelf.checkButton = [[UIButton alloc] init];
+//    }];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -128,67 +139,7 @@
     [self.navigationView addConstraint:
      [NSLayoutConstraint constraintWithItem:self.navigationView attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:self.titleLabel attribute:NSLayoutAttributeCenterX multiplier:1 constant:0]];
 
-    
-//    /* titleVeiw constraint */
-//    
-//    [self.tableView addConstraint:
-//     [NSLayoutConstraint constraintWithItem:self.tableView attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:self.titleView attribute:NSLayoutAttributeCenterX multiplier:1 constant:0]];
-//    
-//    [self.tableView addConstraints:
-//     [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-20-[titleView]-20-|" options:0 metrics:nil views:views]];
-//    
-//    [self.tableView addConstraints:
-//     [NSLayoutConstraint constraintsWithVisualFormat:@"V:|-20-[titleView(==100)]-10-|" options:0 metrics:nil views:views]];
-//
-//    
-//    /* theaterView constraint */
-//    
-//    [self.tableView addConstraint:
-//     [NSLayoutConstraint constraintWithItem:self.tableView attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:self.theaterView attribute:NSLayoutAttributeCenterX multiplier:1 constant:0]];
-//    
-//    [self.tableView addConstraints:
-//     [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-20-[theaterView]-20-|" options:0 metrics:nil views:views]];
-//    
-//    [self.tableView addConstraints:
-//     [NSLayoutConstraint constraintsWithVisualFormat:@"V:[titleView]-20-[theaterView(==100)]" options:0 metrics:nil views:views]];
-//    
-//    /* viewingDayView constraint */
-//    
-//    [self.tableView addConstraint:
-//     [NSLayoutConstraint constraintWithItem:self.tableView attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:self.viewingDayView attribute:NSLayoutAttributeCenterX multiplier:1 constant:0]];
-//    
-//    [self.tableView addConstraints:
-//     [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-20-[viewingDayView]-20-|" options:0 metrics:nil views:views]];
-//    
-//    [self.tableView addConstraints:
-//     [NSLayoutConstraint constraintsWithVisualFormat:@"V:[theaterView]-20-[viewingDayView(==100)]" options:0 metrics:nil views:views]];
-//
-//    
-//    
-//    /* ticketCountView constraint */
-//    
-//    [self.tableView addConstraint:
-//     [NSLayoutConstraint constraintWithItem:self.tableView attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:self.ticketCountView attribute:NSLayoutAttributeCenterX multiplier:1 constant:0]];
-//    
-//    [self.tableView addConstraints:
-//     [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-20-[ticketCountView]-20-|" options:0 metrics:nil views:views]];
-//    
-//    [self.tableView addConstraints:
-//     [NSLayoutConstraint constraintsWithVisualFormat:@"V:[viewingDayView]-20-[ticketCountView(==100)]" options:0 metrics:nil views:views]];
-//    
-//    
-//    /* movieTypeView constraint */
-//    
-//    [self.tableView addConstraint:
-//     [NSLayoutConstraint constraintWithItem:self.tableView attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:self.movieTypeView attribute:NSLayoutAttributeCenterX multiplier:1 constant:0]];
-//    
-//    [self.tableView addConstraints:
-//     [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-20-[movieTypeView]-20-|" options:0 metrics:nil views:views]];
-//    
-//    [self.tableView addConstraints:
-//     [NSLayoutConstraint constraintsWithVisualFormat:@"V:[ticketCountView]-20-[movieTypeView(==100)]" options:0 metrics:nil views:views]];
-
-    
+       
     /* checkButton constraint */
     
     [self.view addConstraint:
