@@ -40,7 +40,7 @@
             </objects>
             <point key="canvasLocation" x="405" y="310"/>
         </scene>
-        <!--Item 2-->
+        <!--티켓 판매-->
         <scene sceneID="yCL-7r-K9o">
             <objects>
                 <viewController id="3fc-Ca-3QN" customClass="EnrollTicketViewController" sceneMemberID="viewController">
@@ -53,13 +53,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="q4O-K6-yVo"/>
+                    <tabBarItem key="tabBarItem" title="티켓 판매" image="create" id="q4O-K6-yVo">
+                        <inset key="imageInsets" minX="25" minY="25" maxX="25" maxY="25"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9bi-4m-mKb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1090" y="1133"/>
         </scene>
-        <!--Item 1-->
+        <!--홈-->
         <scene sceneID="dhm-PX-V5P">
             <objects>
                 <viewController id="kPW-dC-RaR" customClass="MainViewController" sceneMemberID="viewController">
@@ -71,8 +73,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="image" keyPath="keyPath" value="home"/>
+                        </userDefinedRuntimeAttributes>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="Jl7-gQ-RWo"/>
+                    <tabBarItem key="tabBarItem" title="홈" image="home" id="Jl7-gQ-RWo">
+                        <inset key="imageInsets" minX="25" minY="25" maxX="25" maxY="25"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rZx-yO-Ku6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -96,7 +103,7 @@
             </objects>
             <point key="canvasLocation" x="478" y="1824"/>
         </scene>
-        <!--Item-->
+        <!--사용자-->
         <scene sceneID="DDW-Lt-lkD">
             <objects>
                 <viewController id="qCg-yo-E2V" customClass="UserSettingViewController" sceneMemberID="viewController">
@@ -109,7 +116,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="DaT-m4-S6e"/>
+                    <tabBarItem key="tabBarItem" title="사용자" image="user" id="DaT-m4-S6e">
+                        <inset key="imageInsets" minX="25" minY="25" maxX="25" maxY="25"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2RO-5h-Ari" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -135,4 +144,9 @@
             <point key="canvasLocation" x="1064" y="310"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="create" width="128" height="128"/>
+        <image name="home" width="128" height="128"/>
+        <image name="user" width="128" height="128"/>
+    </resources>
 </document>

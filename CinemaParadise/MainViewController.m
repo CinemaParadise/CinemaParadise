@@ -43,6 +43,8 @@
     [self.searchingButton setImage:[UIImage imageNamed:@"search_btn"] forState:UIControlStateNormal];
     self.searchingButton.translatesAutoresizingMaskIntoConstraints = NO;
     [self.searchingButton addTarget:self action:@selector(buttonClicked:) forControlEvents:UIControlEventTouchUpInside];
+    self.searchingButton.imageEdgeInsets = UIEdgeInsetsMake(110,110,110,110);
+
     [self.view addSubview:self.searchingButton];
     
 
@@ -74,10 +76,10 @@
 
     
     [self.view addConstraints:
-     [NSLayoutConstraint constraintsWithVisualFormat:@"V:[presentingMessage]-10-[searchingButton(==50)]" options:0 metrics:nil views:views]];
+     [NSLayoutConstraint constraintsWithVisualFormat:@"V:[presentingMessage]-20-[searchingButton(==100)]" options:0 metrics:nil views:views]];
     
     [self.view addConstraints:
-     [NSLayoutConstraint constraintsWithVisualFormat:@"H:[searchingButton(==50)]-18-|" options:0 metrics:nil views:views]];
+     [NSLayoutConstraint constraintsWithVisualFormat:@"H:[searchingButton(==100)]-25-|" options:0 metrics:nil views:views]];
     
 
     
