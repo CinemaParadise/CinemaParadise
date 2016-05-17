@@ -8,18 +8,23 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SearchingViewController : UIViewController
+@interface SearchingViewController : UIViewController<UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) UIView *navigationView;
 @property (nonatomic, strong) UIButton *backButton;
 @property (nonatomic, strong) UILabel *titleLabel;
 
-@property (strong, nonatomic) UIScrollView *scrollView;
+//@property (strong, nonatomic) UIScrollView *scrollView;
 @property (strong, nonatomic) UIView *titleView;
 @property (strong, nonatomic) UIView *theaterView;
 @property (strong, nonatomic) UIView *viewingDayView;
 @property (strong, nonatomic) UIView *ticketCountView;
 @property (strong, nonatomic) UIView *movieTypeView;
+
+@property (nonatomic, strong) UITableView *tableView;
+@property (strong,nonatomic) NSArray *content;
+@property (strong,nonatomic) UITableViewCell *cell;
+
 
 
 @property (nonatomic, strong) UIButton *checkButton;
