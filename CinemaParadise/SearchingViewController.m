@@ -31,7 +31,7 @@
     
     self.backButton = [[UIButton alloc] init];
     [self.backButton setImage:[UIImage imageNamed:@"arrows"] forState:UIControlStateNormal];
-    
+    [self.backButton addTarget:self action:@selector(backButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
     self.backButton.translatesAutoresizingMaskIntoConstraints = NO;
     [self.navigationView addSubview:self.backButton];
     
@@ -150,6 +150,10 @@
 
 }
 
+- (void)backButtonClicked:(UIButton*)sender
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 
 
 @end
