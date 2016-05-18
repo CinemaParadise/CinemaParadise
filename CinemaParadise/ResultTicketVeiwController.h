@@ -24,10 +24,17 @@
 @property (nonatomic, strong) UILabel *movieTicketCountValueLabel;
 @property (nonatomic, strong) UILabel *movieTypeLabel;
 @property (nonatomic, strong) UILabel *movieTypeValueLabel;
+@property (nonatomic, strong) UILabel *sellerIdLabel;
+@property (nonatomic, strong) UILabel *sellerIdValueLabel;
+@property (nonatomic, strong) UILabel *priceLabel;
+@property (nonatomic, strong) UILabel *priceValueLabel;
+//@property (nonatomic, strong) UILabel *descriptionLabel;
+@property (nonatomic, strong) UILabel *descriptionValueLabel;
 
 @property (nonatomic, strong) UIView *ticketSellerInfoView;
 @property (nonatomic, strong) UIButton *buyButton;
 
+@property (nonatomic, strong) UIView *underBorder;
 
 
 //@property (nonatomic, strong) UITableView *tableView;

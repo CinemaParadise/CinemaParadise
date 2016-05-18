@@ -99,14 +99,67 @@
     self.movieTypeValueLabel.text = ticket.movieType;
     self.movieTypeValueLabel.translatesAutoresizingMaskIntoConstraints = NO;
     [self.ticketInfoView addSubview:self.movieTypeValueLabel];
+    
+   
+    /* under line */
+    self.underBorder = [[UIView alloc] init];
+    self.underBorder.backgroundColor = [UIColor blackColor];
+    self.underBorder.translatesAutoresizingMaskIntoConstraints = NO;
+    [self.view addSubview:self.underBorder];
+    
+    /* ticketSellerInfoView */
+    
+    self.ticketSellerInfoView = [[UIView alloc] init];
+    self.ticketSellerInfoView.backgroundColor = [UIColor whiteColor];
+    self.ticketSellerInfoView.translatesAutoresizingMaskIntoConstraints = NO;
+    [self.view addSubview:self.ticketSellerInfoView];
+    
+    self.sellerIdLabel = [[UILabel alloc] init];
+    self.sellerIdLabel.font=[self.sellerIdLabel.font fontWithSize:23];
+    self.sellerIdLabel.text = @"판매자 ID";
+    self.sellerIdLabel.translatesAutoresizingMaskIntoConstraints = NO;
+    [self.ticketSellerInfoView addSubview:self.sellerIdLabel];
+    
+    self.sellerIdValueLabel = [[UILabel alloc] init];
+    self.sellerIdValueLabel.font=[self.sellerIdValueLabel.font fontWithSize:23];
+    self.sellerIdValueLabel.text = ticket.sellerId;
+    self.sellerIdValueLabel.translatesAutoresizingMaskIntoConstraints = NO;
+    [self.ticketSellerInfoView addSubview:self.sellerIdValueLabel];
+    
+    self.priceLabel = [[UILabel alloc] init];
+    self.priceLabel.font=[self.priceLabel.font fontWithSize:23];
+    self.priceLabel.text = @"가격";
+    self.priceLabel.translatesAutoresizingMaskIntoConstraints = NO;
+    [self.ticketSellerInfoView addSubview:self.priceLabel];
+    
+    self.priceValueLabel = [[UILabel alloc] init];
+    self.priceValueLabel.font=[self.priceValueLabel.font fontWithSize:23];
+    self.priceValueLabel.text = ticket.price;
+    self.priceValueLabel.translatesAutoresizingMaskIntoConstraints = NO;
+    [self.ticketSellerInfoView addSubview:self.priceValueLabel];
+    
+   
+    self.descriptionValueLabel = [[UILabel alloc] init];
+    self.descriptionValueLabel.font=[self.descriptionValueLabel.font fontWithSize:23];
+    self.descriptionValueLabel.text = ticket.descriptionText;
+    self.descriptionValueLabel.backgroundColor = [UIColor colorWithRed:0.92 green:0.92 blue:0.92 alpha:1.00];
+    [self.descriptionValueLabel setNumberOfLines:0];
+    [self.descriptionValueLabel setLineBreakMode:UILineBreakModeWordWrap];
+    
+    self.descriptionValueLabel.translatesAutoresizingMaskIntoConstraints = NO;
+    [self.ticketSellerInfoView addSubview:self.descriptionValueLabel];
 
-}
 
-
-
-
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 44;
+    /* buy button */
+    
+    self.buyButton = [[UIButton alloc] init];
+    self.buyButton.backgroundColor = [UIColor blackColor];
+    self.view.backgroundColor = [UIColor whiteColor];
+    [self.buyButton setTitle:@"티켓 결재 하기" forState:UIControlStateNormal];
+    [self.buyButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [self.buyButton addTarget:self action:@selector(buyButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
+    self.buyButton.translatesAutoresizingMaskIntoConstraints = NO;
+    [self.view addSubview:self.buyButton];
 }
 
 
@@ -123,95 +176,167 @@
                             @"movieTicketCountLabel" : self.movieTicketCountLabel,
                             @"movieTicketCountValueLabel" : self.movieTicketCountValueLabel,
                             @"movieTypeLabel" : self.movieTypeLabel,
-                            @"movieTypeValueLabel" : self.movieTypeValueLabel
+                            @"movieTypeValueLabel" : self.movieTypeValueLabel,
+                            @"underBorder" : self.underBorder,
+                            @"ticketSellerInfoView" : self.ticketSellerInfoView,
+                            @"sellerIdLabel" : self.sellerIdLabel,
+                            @"sellerIdValueLabel" : self.sellerIdValueLabel,
+                            @"priceLabel" : self.priceLabel,
+                            @"priceValueLabel" : self.priceValueLabel,
+                            @"descriptionValueLabel" : self.descriptionValueLabel
+                            ,@"buyButton" : self.buyButton
                             };
     
+    
     [self.view addConstraints:
-     [NSLayoutConstraint constraintsWithVisualFormat:@"V:|[navigationView(==90)][ticketInfoView]|" options:0 metrics:nil views:views]];
+     [NSLayoutConstraint constraintsWithVisualFormat:@"V:|[navigationView(==90)][ticketInfoView(==230)]-15-[underBorder(==1)][ticketSellerInfoView]-15-[buyButton(==60)]-10-|" options:0 metrics:nil views:views]];
     
     [self.view addConstraints:
      [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[navigationView]-0-|" options:0 metrics:nil views:views]];
     
     [self.view addConstraints:
      [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[ticketInfoView]-0-|" options:0 metrics:nil views:views]];
-
+    
+    [self.view addConstraints:
+     [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[ticketSellerInfoView]-0-|" options:0 metrics:nil views:views]];
+    
 
     /* ticketInfoView*/
 
     [self.ticketInfoView addConstraints:
-     [NSLayoutConstraint constraintsWithVisualFormat:@"V:|-40-[movieTitleLabel(==24)]-15-[movieTheaterLabel(==24)]-15-[movieVeiwingDayLabel(==24)]-15-[movieTicketCountLabel(==24)]-15-[movieTypeLabel(==24)]-15-|"
+     [NSLayoutConstraint constraintsWithVisualFormat:@"V:|-35-[movieTitleLabel(==24)]-15-[movieTheaterLabel(==24)]-15-[movieVeiwingDayLabel(==24)]-15-[movieTicketCountLabel(==24)]-15-[movieTypeLabel(==24)]"
                                          options:0
                                          metrics:nil
                                            views:views]];
 
     [self.ticketInfoView addConstraints:
-     [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-40-[movieTitleLabel]"
+     [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-35-[movieTitleLabel]"
                                          options:0
                                          metrics:nil
                                            views:views]];
 
     [self.ticketInfoView addConstraints:
-     [NSLayoutConstraint constraintsWithVisualFormat:@"V:|-40-[movieTitleValueLabel(==24)]-15-[movieTheaterValueLabel(==24)]-15-[movieVeiwingDayValueLabel(==24)]-15-[movieTicketCountValueLabel(==24)]-15-[movieTypeValueLabel(==24)]-15-|"
+     [NSLayoutConstraint constraintsWithVisualFormat:@"V:|-35-[movieTitleValueLabel(==24)]-15-[movieTheaterValueLabel(==24)]-15-[movieVeiwingDayValueLabel(==24)]-15-[movieTicketCountValueLabel(==24)]-15-[movieTypeValueLabel(==24)]"
                                          options:0
                                          metrics:nil
                                            views:views]];
 
     [self.ticketInfoView addConstraints:
-    [NSLayoutConstraint constraintsWithVisualFormat:@"H:[movieTitleValueLabel]-40-|"
+    [NSLayoutConstraint constraintsWithVisualFormat:@"H:[movieTitleValueLabel]-35-|"
                                          options:0
                                          metrics:nil
                                            views:views]];
 
 
-
     [self.ticketInfoView addConstraints:
-     [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-40-[movieTheaterLabel]"
+     [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-35-[movieTheaterLabel]"
                                          options:0
                                          metrics:nil
                                            views:views]];
    
     [self.ticketInfoView addConstraints:
-     [NSLayoutConstraint constraintsWithVisualFormat:@"H:[movieTheaterValueLabel]-40-|"
+     [NSLayoutConstraint constraintsWithVisualFormat:@"H:[movieTheaterValueLabel]-35-|"
                                          options:0
                                          metrics:nil
                                            views:views]];
 
     [self.ticketInfoView addConstraints:
-     [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-40-[movieVeiwingDayLabel]"
+     [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-35-[movieVeiwingDayLabel]"
                                          options:0
                                          metrics:nil
                                            views:views]];
 
     [self.ticketInfoView addConstraints:
-     [NSLayoutConstraint constraintsWithVisualFormat:@"H:[movieVeiwingDayValueLabel]-40-|"
+     [NSLayoutConstraint constraintsWithVisualFormat:@"H:[movieVeiwingDayValueLabel]-35-|"
                                          options:0
                                          metrics:nil
                                            views:views]];
 
     [self.ticketInfoView addConstraints:
-     [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-40-[movieTicketCountLabel]"
+     [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-35-[movieTicketCountLabel]"
                                          options:0
                                          metrics:nil
                                            views:views]];
 
 
     [self.ticketInfoView addConstraints:
-     [NSLayoutConstraint constraintsWithVisualFormat:@"H:[movieTicketCountValueLabel]-40-|"
+     [NSLayoutConstraint constraintsWithVisualFormat:@"H:[movieTicketCountValueLabel]-35-|"
                                          options:0
                                          metrics:nil
                                            views:views]];
 
     [self.ticketInfoView addConstraints:
-     [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-40-[movieTypeLabel]"
+     [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-35-[movieTypeLabel]"
                                          options:0
                                          metrics:nil
                                            views:views]];
 
     [self.ticketInfoView addConstraints:
-     [NSLayoutConstraint constraintsWithVisualFormat:@"H:[movieTypeValueLabel]-40-|"
+     [NSLayoutConstraint constraintsWithVisualFormat:@"H:[movieTypeValueLabel]-35-|"
                                          options:0
                                          metrics:nil
                                            views:views]];
+
+    [self.view addConstraints:
+     [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-15-[underBorder]-15-|"
+                                             options:0
+                                             metrics:nil
+                                               views:views]];
+
+
+    /* seller info */
+    
+    [self.ticketSellerInfoView addConstraints:
+     [NSLayoutConstraint constraintsWithVisualFormat:@"V:|-20-[sellerIdLabel(==24)]-15-[priceLabel(==24)]-15-[descriptionValueLabel]|"
+                                             options:0
+                                             metrics:nil
+                                               views:views]];
+    
+    [self.ticketSellerInfoView addConstraints:
+     [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-35-[sellerIdLabel]"
+                                             options:0
+                                             metrics:nil
+                                               views:views]];
+    
+    [self.ticketSellerInfoView addConstraints:
+     [NSLayoutConstraint constraintsWithVisualFormat:@"V:|-20-[sellerIdValueLabel(==24)]-15-[priceValueLabel(==24)]-15-[descriptionValueLabel]|"
+                                             options:0
+                                             metrics:nil
+                                               views:views]];
+    
+    [self.ticketSellerInfoView addConstraints:
+     [NSLayoutConstraint constraintsWithVisualFormat:@"H:[sellerIdValueLabel]-35-|"
+                                             options:0
+                                             metrics:nil
+                                               views:views]];
+    
+    [self.ticketSellerInfoView addConstraints:
+     [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-35-[priceLabel]"
+                                             options:0
+                                             metrics:nil
+                                               views:views]];
+    
+    [self.ticketSellerInfoView addConstraints:
+     [NSLayoutConstraint constraintsWithVisualFormat:@"H:[priceValueLabel]-35-|"
+                                             options:0
+                                             metrics:nil
+                                               views:views]];
+    
+    [self.ticketSellerInfoView addConstraints:
+     [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-15-[descriptionValueLabel]-15-|" options:0 metrics:nil views:views]];
+
+    
+    [self.view addConstraint:
+    [NSLayoutConstraint constraintWithItem:self.view attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:self.buyButton attribute:NSLayoutAttributeCenterX multiplier:1 constant:0]];
+    
+    [self.view addConstraints:
+     [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-10-[buyButton]-10-|" options:0 metrics:nil views:views]];
+}
+
+- (void) buyButtonClicked:(UIButton*)sender
+{
+//    ResultTicketVeiwController *controler = [[ResultTicketVeiwController alloc] init];
+//    [self presentViewController:controler animated:YES completion:nil];
 }
 
 
