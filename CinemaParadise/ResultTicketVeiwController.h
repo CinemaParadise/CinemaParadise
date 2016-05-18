@@ -36,9 +36,4 @@
 
 @property (nonatomic, strong) UIView *underBorder;
 
-
-//@property (nonatomic, strong) UITableView *tableView;
-//@property (strong,nonatomic) NSArray *content;
-//@property (strong,nonatomic) UITableViewCell *cell;
-
 @end

@@ -68,6 +68,11 @@
     [self.checkButton addTarget:self action:@selector(checkButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
     self.checkButton.translatesAutoresizingMaskIntoConstraints = NO;
     [self.view addSubview:self.checkButton];
+    
+    
+    /* alert */
+    self.alert = [[UIAlertView alloc]initWithTitle:nil message:@"검색된 23개의 티켓 중\n최저가 티켓 보러 가기!"
+                                          delegate:self cancelButtonTitle:@"취소" otherButtonTitles:@"확인", nil];
 
 //    int abc = 5;
 //    UIView *view = [[UIView alloc] init];
@@ -157,17 +162,24 @@
 
 }
 
-- (void)backButtonClicked:(UIButton*)sender
-{
+- (void)backButtonClicked:(UIButton*)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 
 
-- (void)checkButtonClicked:(UIButton*)sender
-{
-    ResultTicketVeiwController *controler = [[ResultTicketVeiwController alloc] init];
-    [self presentViewController:controler animated:YES completion:nil];
+- (void)checkButtonClicked:(UIButton*)sender {
+    [self.alert show];
+}
+
+- (void)alertView:(UIAlertController *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+    if (buttonIndex == 1) {
+        ResultTicketVeiwController *controler = [[ResultTicketVeiwController alloc] init];
+        [self presentViewController:controler animated:YES completion:nil];
+    }
+    else {
+        
+    }
 }
 
 

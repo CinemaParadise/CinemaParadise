@@ -25,11 +25,11 @@
 @property (strong,nonatomic) NSArray *content;
 @property (strong,nonatomic) UITableViewCell *cell;
 
-
-
 @property (nonatomic, strong) UIButton *checkButton;
 
-- (IBAction)backButton:(id)sender;
+@property (nonatomic, strong) UIAlertView *alert;
+
+
 
 
 @end

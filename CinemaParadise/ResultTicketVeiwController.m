@@ -159,6 +159,7 @@
     [self.buyButton addTarget:self action:@selector(buyButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
     self.buyButton.translatesAutoresizingMaskIntoConstraints = NO;
     [self.view addSubview:self.buyButton];
+    
 }
 
 
