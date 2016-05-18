@@ -10,11 +10,10 @@
 
 @interface HWTicket : NSObject
 
-@property (nonatomic, strong) NSString *title;
-@property (nonatomic, strong) NSString *selectedValue;
-
-- (instancetype)initWithTitle:(NSString *)title selectedValue:(NSString *)selectedValue;
-
-
+@property (nonatomic, strong) NSString *movieTitle;
+@property (nonatomic, strong) NSString *movieTheater;
+@property (nonatomic, strong) NSString *movieVeiwingDay;
+@property (nonatomic, strong) NSString *movieTicketCount;
+@property (nonatomic, strong) NSString *movieType;
 
 @end
