@@ -40,7 +40,7 @@
     
     self.movieTitleLabel = [[UILabel alloc] init];
     self.movieTitleLabel.font=[self.movieTitleLabel.font fontWithSize:23];
-    self.movieTitleLabel.text = @"영화 제목";
+    self.movieTitleLabel.text = @"영화명";
     self.movieTitleLabel.translatesAutoresizingMaskIntoConstraints = NO;
     [self.ticketInfoView addSubview:self.movieTitleLabel];
 
@@ -141,7 +141,7 @@
     self.descriptionValueLabel = [[UILabel alloc] init];
     self.descriptionValueLabel.font=[self.descriptionValueLabel.font fontWithSize:23];
     self.descriptionValueLabel.text = ticket.descriptionText;
-    self.descriptionValueLabel.backgroundColor = [UIColor colorWithRed:0.92 green:0.92 blue:0.92 alpha:1.00];
+//    self.descriptionValueLabel.backgroundColor = [UIColor colorWithRed:0.96 green:0.96 blue:0.96 alpha:1.00];
     [self.descriptionValueLabel setNumberOfLines:0];
     [self.descriptionValueLabel setLineBreakMode:UILineBreakModeWordWrap];
     
@@ -189,7 +189,7 @@
     
     
     [self.view addConstraints:
-     [NSLayoutConstraint constraintsWithVisualFormat:@"V:|[navigationView(==90)][ticketInfoView(==230)]-15-[underBorder(==1)][ticketSellerInfoView]-15-[buyButton(==60)]-10-|" options:0 metrics:nil views:views]];
+     [NSLayoutConstraint constraintsWithVisualFormat:@"V:|[navigationView(==90)][ticketInfoView(==230)]-15-[underBorder(==2)][ticketSellerInfoView]-15-[buyButton(==60)]-10-|" options:0 metrics:nil views:views]];
     
     [self.view addConstraints:
      [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[navigationView]-0-|" options:0 metrics:nil views:views]];
@@ -323,7 +323,7 @@
                                                views:views]];
     
     [self.ticketSellerInfoView addConstraints:
-     [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-15-[descriptionValueLabel]-15-|" options:0 metrics:nil views:views]];
+     [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-25-[descriptionValueLabel]-25-|" options:0 metrics:nil views:views]];
 
     
     [self.view addConstraint:
