@@ -8,7 +8,6 @@
 
 #import "ResultTicketVeiwController.h"
 #import "HWTicket.h"
-#import "HWTicketTableViewCell.h"
 
 @interface ResultTicketVeiwController ()
 

@@ -17,7 +17,6 @@
     if (self) {
         [self setupViewComponents];
         [self setupConstraints];
-//        [self setUnderLine];
     }
     return self;
 }
@@ -78,11 +77,5 @@
                                                views:views]];
 }
 
-//- (void) setUnderLine {
-//    UIView *lineView = [[UIView alloc] initWithFrame:CGRectMake(17, 43, self.contentView.bounds.size.width-33, 0.1)];
-//    lineView.backgroundColor = [UIColor grayColor];
-//    lineView.autoresizingMask = 0x3f;
-//    [self.contentView addSubview:lineView];
-//}
 
 @end
