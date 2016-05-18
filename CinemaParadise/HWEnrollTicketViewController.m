@@ -6,13 +6,13 @@
 //  Copyright © 2016년 GraceLilac. All rights reserved.
 //
 
-#import "EnrollTicketViewController.h"
+#import "HWEnrollTicketViewController.h"
 
-@interface EnrollTicketViewController ()
+@interface HWEnrollTicketViewController ()
 
 @end
 
-@implementation EnrollTicketViewController
+@implementation HWEnrollTicketViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

@@ -7,41 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		69A9339B1CE37CEA00126994 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A9339A1CE37CEA00126994 /* MainViewController.m */; };
-		69A933A71CE4D78600126994 /* SearchingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A933A61CE4D78600126994 /* SearchingViewController.m */; };
-		69A933AA1CE4D7CA00126994 /* EnrollTicketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A933A91CE4D7CA00126994 /* EnrollTicketViewController.m */; };
-		69A933AD1CE4D81100126994 /* UserSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A933AC1CE4D81100126994 /* UserSettingViewController.m */; };
+		69A9339B1CE37CEA00126994 /* HWMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A9339A1CE37CEA00126994 /* HWMainViewController.m */; };
+		69A933A71CE4D78600126994 /* HWSearchingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A933A61CE4D78600126994 /* HWSearchingViewController.m */; };
+		69A933AA1CE4D7CA00126994 /* HWEnrollTicketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A933A91CE4D7CA00126994 /* HWEnrollTicketViewController.m */; };
+		69A933AD1CE4D81100126994 /* HWUserSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A933AC1CE4D81100126994 /* HWUserSettingViewController.m */; };
 		69A933B91CE79F9200126994 /* UIButton+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A933B81CE79F9200126994 /* UIButton+Addition.m */; };
 		69A933BD1CEB4DBD00126994 /* HWSearchingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A933BC1CEB4DBD00126994 /* HWSearchingTableViewCell.m */; };
 		69A933C01CEB5F7E00126994 /* HWSearchingCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A933BF1CEB5F7E00126994 /* HWSearchingCategory.m */; };
-		69A9E3401CEC59D600ED0019 /* ResultTicketVeiwController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A9E33F1CEC59D600ED0019 /* ResultTicketVeiwController.m */; };
+		69A9E3401CEC59D600ED0019 /* HWResultTicketVeiwController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A9E33F1CEC59D600ED0019 /* HWResultTicketVeiwController.m */; };
 		69A9E3431CEC65CE00ED0019 /* HWTicket.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A9E3421CEC65CE00ED0019 /* HWTicket.m */; };
 		69FA9D491CE240960008F5C8 /* KakaoOpenSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69FA9D481CE240960008F5C8 /* KakaoOpenSDK.framework */; };
 		BA40239E1CE2170700C6C12A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BA40239D1CE2170700C6C12A /* main.m */; };
 		BA4023A11CE2170700C6C12A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4023A01CE2170700C6C12A /* AppDelegate.m */; };
-		BA4023A41CE2170700C6C12A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4023A31CE2170700C6C12A /* ViewController.m */; };
+		BA4023A41CE2170700C6C12A /* HWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4023A31CE2170700C6C12A /* HWViewController.m */; };
 		BA4023A71CE2170700C6C12A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA4023A51CE2170700C6C12A /* Main.storyboard */; };
 		BA4023A91CE2170700C6C12A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA4023A81CE2170700C6C12A /* Assets.xcassets */; };
 		BA4023AC1CE2170700C6C12A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA4023AA1CE2170700C6C12A /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		69A933991CE37CEA00126994 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
-		69A9339A1CE37CEA00126994 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
-		69A933A51CE4D78600126994 /* SearchingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchingViewController.h; sourceTree = "<group>"; };
-		69A933A61CE4D78600126994 /* SearchingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchingViewController.m; sourceTree = "<group>"; };
-		69A933A81CE4D7CA00126994 /* EnrollTicketViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnrollTicketViewController.h; sourceTree = "<group>"; };
-		69A933A91CE4D7CA00126994 /* EnrollTicketViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnrollTicketViewController.m; sourceTree = "<group>"; };
-		69A933AB1CE4D81100126994 /* UserSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserSettingViewController.h; sourceTree = "<group>"; };
-		69A933AC1CE4D81100126994 /* UserSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserSettingViewController.m; sourceTree = "<group>"; };
+		69A933991CE37CEA00126994 /* HWMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWMainViewController.h; sourceTree = "<group>"; };
+		69A9339A1CE37CEA00126994 /* HWMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWMainViewController.m; sourceTree = "<group>"; };
+		69A933A51CE4D78600126994 /* HWSearchingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWSearchingViewController.h; sourceTree = "<group>"; };
+		69A933A61CE4D78600126994 /* HWSearchingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWSearchingViewController.m; sourceTree = "<group>"; };
+		69A933A81CE4D7CA00126994 /* HWEnrollTicketViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWEnrollTicketViewController.h; sourceTree = "<group>"; };
+		69A933A91CE4D7CA00126994 /* HWEnrollTicketViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWEnrollTicketViewController.m; sourceTree = "<group>"; };
+		69A933AB1CE4D81100126994 /* HWUserSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWUserSettingViewController.h; sourceTree = "<group>"; };
+		69A933AC1CE4D81100126994 /* HWUserSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWUserSettingViewController.m; sourceTree = "<group>"; };
 		69A933B71CE79F9200126994 /* UIButton+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Addition.h"; sourceTree = "<group>"; };
 		69A933B81CE79F9200126994 /* UIButton+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Addition.m"; sourceTree = "<group>"; };
 		69A933BB1CEB4DBD00126994 /* HWSearchingTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWSearchingTableViewCell.h; sourceTree = "<group>"; };
 		69A933BC1CEB4DBD00126994 /* HWSearchingTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWSearchingTableViewCell.m; sourceTree = "<group>"; };
 		69A933BE1CEB5F7E00126994 /* HWSearchingCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWSearchingCategory.h; sourceTree = "<group>"; };
 		69A933BF1CEB5F7E00126994 /* HWSearchingCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWSearchingCategory.m; sourceTree = "<group>"; };
-		69A9E33E1CEC59D600ED0019 /* ResultTicketVeiwController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultTicketVeiwController.h; sourceTree = "<group>"; };
-		69A9E33F1CEC59D600ED0019 /* ResultTicketVeiwController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultTicketVeiwController.m; sourceTree = "<group>"; };
+		69A9E33E1CEC59D600ED0019 /* HWResultTicketVeiwController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWResultTicketVeiwController.h; sourceTree = "<group>"; };
+		69A9E33F1CEC59D600ED0019 /* HWResultTicketVeiwController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWResultTicketVeiwController.m; sourceTree = "<group>"; };
 		69A9E3411CEC65CE00ED0019 /* HWTicket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWTicket.h; sourceTree = "<group>"; };
 		69A9E3421CEC65CE00ED0019 /* HWTicket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWTicket.m; sourceTree = "<group>"; };
 		69FA9D481CE240960008F5C8 /* KakaoOpenSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KakaoOpenSDK.framework; path = CinemaParadise/KakaoOpenSDK.framework; sourceTree = "<group>"; };
@@ -49,8 +49,8 @@
 		BA40239D1CE2170700C6C12A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BA40239F1CE2170700C6C12A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BA4023A01CE2170700C6C12A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		BA4023A21CE2170700C6C12A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		BA4023A31CE2170700C6C12A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BA4023A21CE2170700C6C12A /* HWViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HWViewController.h; sourceTree = "<group>"; };
+		BA4023A31CE2170700C6C12A /* HWViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HWViewController.m; sourceTree = "<group>"; };
 		BA4023A61CE2170700C6C12A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BA4023A81CE2170700C6C12A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA4023AB1CE2170700C6C12A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -99,22 +99,22 @@
 			children = (
 				BA40239F1CE2170700C6C12A /* AppDelegate.h */,
 				BA4023A01CE2170700C6C12A /* AppDelegate.m */,
-				BA4023A21CE2170700C6C12A /* ViewController.h */,
-				BA4023A31CE2170700C6C12A /* ViewController.m */,
-				69A933991CE37CEA00126994 /* MainViewController.h */,
-				69A9339A1CE37CEA00126994 /* MainViewController.m */,
-				69A933AB1CE4D81100126994 /* UserSettingViewController.h */,
-				69A933AC1CE4D81100126994 /* UserSettingViewController.m */,
-				69A933A81CE4D7CA00126994 /* EnrollTicketViewController.h */,
-				69A933A91CE4D7CA00126994 /* EnrollTicketViewController.m */,
-				69A933A51CE4D78600126994 /* SearchingViewController.h */,
-				69A933A61CE4D78600126994 /* SearchingViewController.m */,
+				BA4023A21CE2170700C6C12A /* HWViewController.h */,
+				BA4023A31CE2170700C6C12A /* HWViewController.m */,
+				69A933991CE37CEA00126994 /* HWMainViewController.h */,
+				69A9339A1CE37CEA00126994 /* HWMainViewController.m */,
+				69A933AB1CE4D81100126994 /* HWUserSettingViewController.h */,
+				69A933AC1CE4D81100126994 /* HWUserSettingViewController.m */,
+				69A933A81CE4D7CA00126994 /* HWEnrollTicketViewController.h */,
+				69A933A91CE4D7CA00126994 /* HWEnrollTicketViewController.m */,
+				69A933A51CE4D78600126994 /* HWSearchingViewController.h */,
+				69A933A61CE4D78600126994 /* HWSearchingViewController.m */,
 				69A933BB1CEB4DBD00126994 /* HWSearchingTableViewCell.h */,
 				69A933BC1CEB4DBD00126994 /* HWSearchingTableViewCell.m */,
 				69A933BE1CEB5F7E00126994 /* HWSearchingCategory.h */,
 				69A933BF1CEB5F7E00126994 /* HWSearchingCategory.m */,
-				69A9E33E1CEC59D600ED0019 /* ResultTicketVeiwController.h */,
-				69A9E33F1CEC59D600ED0019 /* ResultTicketVeiwController.m */,
+				69A9E33E1CEC59D600ED0019 /* HWResultTicketVeiwController.h */,
+				69A9E33F1CEC59D600ED0019 /* HWResultTicketVeiwController.m */,
 				69A9E3411CEC65CE00ED0019 /* HWTicket.h */,
 				69A9E3421CEC65CE00ED0019 /* HWTicket.m */,
 				69A933B71CE79F9200126994 /* UIButton+Addition.h */,
@@ -208,16 +208,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				69A9E3431CEC65CE00ED0019 /* HWTicket.m in Sources */,
-				69A933AA1CE4D7CA00126994 /* EnrollTicketViewController.m in Sources */,
-				BA4023A41CE2170700C6C12A /* ViewController.m in Sources */,
+				69A933AA1CE4D7CA00126994 /* HWEnrollTicketViewController.m in Sources */,
+				BA4023A41CE2170700C6C12A /* HWViewController.m in Sources */,
 				BA4023A11CE2170700C6C12A /* AppDelegate.m in Sources */,
 				BA40239E1CE2170700C6C12A /* main.m in Sources */,
-				69A933A71CE4D78600126994 /* SearchingViewController.m in Sources */,
+				69A933A71CE4D78600126994 /* HWSearchingViewController.m in Sources */,
 				69A933BD1CEB4DBD00126994 /* HWSearchingTableViewCell.m in Sources */,
-				69A933AD1CE4D81100126994 /* UserSettingViewController.m in Sources */,
-				69A9E3401CEC59D600ED0019 /* ResultTicketVeiwController.m in Sources */,
+				69A933AD1CE4D81100126994 /* HWUserSettingViewController.m in Sources */,
+				69A9E3401CEC59D600ED0019 /* HWResultTicketVeiwController.m in Sources */,
 				69A933C01CEB5F7E00126994 /* HWSearchingCategory.m in Sources */,
-				69A9339B1CE37CEA00126994 /* MainViewController.m in Sources */,
+				69A9339B1CE37CEA00126994 /* HWMainViewController.m in Sources */,
 				69A933B91CE79F9200126994 /* UIButton+Addition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

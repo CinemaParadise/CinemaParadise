@@ -8,7 +8,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="HWViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -43,7 +43,7 @@
         <!--티켓 판매-->
         <scene sceneID="yCL-7r-K9o">
             <objects>
-                <viewController id="3fc-Ca-3QN" customClass="EnrollTicketViewController" sceneMemberID="viewController">
+                <viewController id="3fc-Ca-3QN" customClass="HWEnrollTicketViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="aZh-zt-U1z"/>
                         <viewControllerLayoutGuide type="bottom" id="WUi-r1-iCv"/>
@@ -64,7 +64,7 @@
         <!--홈-->
         <scene sceneID="dhm-PX-V5P">
             <objects>
-                <viewController id="kPW-dC-RaR" customClass="MainViewController" sceneMemberID="viewController">
+                <viewController id="kPW-dC-RaR" customClass="HWMainViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mU5-4G-cHp"/>
                         <viewControllerLayoutGuide type="bottom" id="k8u-0v-HJE"/>
@@ -88,7 +88,7 @@
         <!--Searching View Controller-->
         <scene sceneID="WkS-OF-L8D">
             <objects>
-                <viewController id="4q9-Eb-dqm" customClass="SearchingViewController" sceneMemberID="viewController">
+                <viewController id="4q9-Eb-dqm" customClass="HWSearchingViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="39T-bM-dSG"/>
                         <viewControllerLayoutGuide type="bottom" id="Rsp-8x-nYJ"/>
@@ -106,7 +106,7 @@
         <!--Result Ticket Veiw Controller-->
         <scene sceneID="LSP-g0-AZR">
             <objects>
-                <viewController id="2Wx-Xt-L1B" customClass="ResultTicketVeiwController" sceneMemberID="viewController">
+                <viewController id="2Wx-Xt-L1B" customClass="HWResultTicketVeiwController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="TEy-b8-Yif"/>
                         <viewControllerLayoutGuide type="bottom" id="aLW-hM-1y4"/>
@@ -124,7 +124,7 @@
         <!--사용자-->
         <scene sceneID="DDW-Lt-lkD">
             <objects>
-                <viewController id="qCg-yo-E2V" customClass="UserSettingViewController" sceneMemberID="viewController">
+                <viewController id="qCg-yo-E2V" customClass="HWUserSettingViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="49V-Mr-p6W"/>
                         <viewControllerLayoutGuide type="bottom" id="Nco-rm-us6"/>

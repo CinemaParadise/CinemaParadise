@@ -6,10 +6,10 @@
 //  Copyright © 2016년 GraceLilac. All rights reserved.
 //
 
-#import "MainViewController.h"
-#import "SearchingViewController.h"
+#import "HWMainViewController.h"
+#import "HWSearchingViewController.h"
 
-@interface MainViewController ()
+@interface HWMainViewController ()
 
 @property (nonatomic, strong) UIImageView *posterImageView;
 @property (nonatomic, strong) UILabel *presentingMessage1;
@@ -18,7 +18,7 @@
 
 @end
 
-@implementation MainViewController
+@implementation HWMainViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -120,7 +120,7 @@
 
 - (void)buttonClicked:(UIButton*)sender
 {
-    SearchingViewController *controler = [[SearchingViewController alloc] init];
+    HWSearchingViewController *controler = [[HWSearchingViewController alloc] init];
     [self presentViewController:controler animated:YES completion:nil];
 }
 

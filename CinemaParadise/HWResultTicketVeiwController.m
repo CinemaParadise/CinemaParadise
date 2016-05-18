@@ -6,14 +6,14 @@
 //  Copyright © 2016년 GraceLilac. All rights reserved.
 //
 
-#import "ResultTicketVeiwController.h"
+#import "HWResultTicketVeiwController.h"
 #import "HWTicket.h"
 
-@interface ResultTicketVeiwController ()
+@interface HWResultTicketVeiwController ()
 
 @end
 
-@implementation ResultTicketVeiwController
+@implementation HWResultTicketVeiwController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -335,7 +335,7 @@
 
 - (void) buyButtonClicked:(UIButton*)sender
 {
-//    ResultTicketVeiwController *controler = [[ResultTicketVeiwController alloc] init];
+//    HWResultTicketVeiwController *controler = [[HWResultTicketVeiwController alloc] init];
 //    [self presentViewController:controler animated:YES completion:nil];
 }
 

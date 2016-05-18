@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ResultTicketVeiwController :UIViewController
+@interface HWResultTicketVeiwController :UIViewController
 
 
 @property (nonatomic, strong) UIView *navigationView;

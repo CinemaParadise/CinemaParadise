@@ -6,13 +6,13 @@
 //  Copyright © 2016년 GraceLilac. All rights reserved.
 //
 
-#import "UserSettingViewController.h"
+#import "HWUserSettingViewController.h"
 
-@interface UserSettingViewController ()
+@interface HWUserSettingViewController ()
 
 @end
 
-@implementation UserSettingViewController
+@implementation HWUserSettingViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

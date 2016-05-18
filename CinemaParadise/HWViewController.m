@@ -6,17 +6,17 @@
 //  Copyright © 2016년 GraceLilac. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "HWViewController.h"
 #import <KakaoOpenSDK/KakaoOpenSDK.h>
 #import "UIButton+Addition.h"
 
-@interface ViewController ()
+@interface HWViewController ()
 
 @property (weak, nonatomic) IBOutlet UIButton *loginButton;
 
 @end
 
-@implementation ViewController
+@implementation HWViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

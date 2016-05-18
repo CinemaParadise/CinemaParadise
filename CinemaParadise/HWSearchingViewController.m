@@ -6,16 +6,16 @@
 //  Copyright © 2016년 GraceLilac. All rights reserved.
 //
 
-#import "SearchingViewController.h"
+#import "HWSearchingViewController.h"
 #import "HWSearchingTableViewCell.h"
 #import "HWSearchingCategory.h"
-#import "ResultTicketVeiwController.h"
+#import "HWResultTicketVeiwController.h"
 
-@interface SearchingViewController ()
+@interface HWSearchingViewController ()
 
 @end
 
-@implementation SearchingViewController
+@implementation HWSearchingViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -78,7 +78,7 @@
 //    UIView *view = [[UIView alloc] init];
 //    
 //    __weak typeof(self) weakSelf = self;
-//    [self presentViewController:[[SearchingViewController alloc] init] animated:YES completion:^(void){
+//    [self presentViewController:[[HWSearchingViewController alloc] init] animated:YES completion:^(void){
 //        int cdf = abc;
 //        UIView *afsd = view;
 //        
@@ -174,7 +174,7 @@
 
 - (void)alertView:(UIAlertController *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
     if (buttonIndex == 1) {
-        ResultTicketVeiwController *controler = [[ResultTicketVeiwController alloc] init];
+        HWResultTicketVeiwController *controler = [[HWResultTicketVeiwController alloc] init];
         [self presentViewController:controler animated:YES completion:nil];
     }
     else {

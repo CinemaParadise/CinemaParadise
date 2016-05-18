@@ -1,5 +1,5 @@
 //
-//  EnrollTicketViewController.h
+//  UserSettingViewController.h
 //  CinemaParadise
 //
 //  Created by GraceLilac on 2016. 5. 13..
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface EnrollTicketViewController : UIViewController
+@interface HWUserSettingViewController : UIViewController
 
 @end

@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SearchingViewController : UIViewController<UITableViewDelegate, UITableViewDataSource>
+@interface HWSearchingViewController : UIViewController<UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) UIView *navigationView;
 @property (nonatomic, strong) UIButton *backButton;
