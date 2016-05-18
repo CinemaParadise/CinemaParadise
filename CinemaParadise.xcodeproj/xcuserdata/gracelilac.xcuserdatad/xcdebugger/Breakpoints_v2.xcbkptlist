@@ -74,11 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CinemaParadise/MainViewController.m"
-            timestampString = "485205646.908424"
+            timestampString = "485249354.865757"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "107"
-            endingLineNumber = "107"
+            startingLineNumber = "121"
+            endingLineNumber = "121"
             landmarkName = "-buttonClicked:"
             landmarkType = "5">
          </BreakpointContent>

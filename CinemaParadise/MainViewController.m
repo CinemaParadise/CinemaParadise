@@ -47,15 +47,29 @@
     self.presentingMessage2.translatesAutoresizingMaskIntoConstraints = NO;
     [self.view addSubview:self.presentingMessage2];
     
+    
     self.searchingButton = [[UIButton alloc] init];
-    [self.searchingButton setImage:[UIImage imageNamed:@"search_btn"] forState:UIControlStateNormal];
-    self.searchingButton.translatesAutoresizingMaskIntoConstraints = NO;
+    self.searchingButton =[UIButton buttonWithType:UIButtonTypeCustom];
+    self.searchingButton.clipsToBounds = YES;
+    self.searchingButton.layer.cornerRadius = 50;
+    [self.searchingButton setImage:[UIImage imageNamed:@"search"] forState:UIControlStateNormal];
+    self.searchingButton.contentHorizontalAlignment = UIControlContentHorizontalAlignmentFill;
+    self.searchingButton.contentVerticalAlignment = UIControlContentVerticalAlignmentFill;
+    self.searchingButton.backgroundColor = [UIColor blackColor];
     [self.searchingButton addTarget:self action:@selector(buttonClicked:) forControlEvents:UIControlEventTouchUpInside];
-    self.searchingButton.imageEdgeInsets = UIEdgeInsetsMake(114,114,114,114);
+    self.searchingButton.translatesAutoresizingMaskIntoConstraints = NO;
 
+    self.searchingButton.layer.shadowColor = [UIColor grayColor].CGColor;
+    
+    self.searchingButton.layer.shadowOffset = CGSizeMake(0, 0);
+    self.searchingButton.layer.shadowOpacity = 0.8;
+    self.searchingButton.layer.shadowRadius = 5.0f;
+    
+    
     [self.view addSubview:self.searchingButton];
     
 
+    
 
 }
 

@@ -95,7 +95,7 @@
     cell.title.text = searchingCategory.title;
     cell.selectedOptionLabel.text = searchingCategory.selectedOption;
     [cell.button setTitle:searchingCategory.buttonTitle forState:UIControlStateNormal];
-    [cell.button setTitleColor:[UIColor colorWithRed:0.34 green:0.53 blue:0.53 alpha:1.00] forState:UIControlStateNormal];
+    [cell.button setTitleColor:[UIColor colorWithRed:0.00 green:0.54 blue:0.48 alpha:1.00] forState:UIControlStateNormal];
     
     return cell;
 }
