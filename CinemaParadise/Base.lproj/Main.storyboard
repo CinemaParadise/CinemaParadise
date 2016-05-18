@@ -121,6 +121,24 @@
             </objects>
             <point key="canvasLocation" x="478" y="2487"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="khU-vV-Eyw">
+            <objects>
+                <viewController id="4SK-wd-qPs" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wg3-sl-3G1"/>
+                        <viewControllerLayoutGuide type="bottom" id="dLe-eS-cli"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hbT-gS-MuD">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9kU-BN-HrR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="478" y="3155"/>
+        </scene>
         <!--사용자-->
         <scene sceneID="DDW-Lt-lkD">
             <objects>

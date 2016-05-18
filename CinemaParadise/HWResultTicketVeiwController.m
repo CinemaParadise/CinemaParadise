@@ -8,6 +8,7 @@
 
 #import "HWResultTicketVeiwController.h"
 #import "HWTicket.h"
+#import "HWPaymentViewController.h"
 
 @interface HWResultTicketVeiwController ()
 
@@ -335,8 +336,8 @@
 
 - (void) buyButtonClicked:(UIButton*)sender
 {
-//    HWResultTicketVeiwController *controler = [[HWResultTicketVeiwController alloc] init];
-//    [self presentViewController:controler animated:YES completion:nil];
+    HWPaymentViewController *controler = [[HWPaymentViewController alloc] init];
+    [self presentViewController:controler animated:YES completion:nil];
 }
 
 

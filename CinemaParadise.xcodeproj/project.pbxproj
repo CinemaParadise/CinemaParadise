@@ -16,6 +16,7 @@
 		69A933C01CEB5F7E00126994 /* HWSearchingCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A933BF1CEB5F7E00126994 /* HWSearchingCategory.m */; };
 		69A9E3401CEC59D600ED0019 /* HWResultTicketVeiwController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A9E33F1CEC59D600ED0019 /* HWResultTicketVeiwController.m */; };
 		69A9E3431CEC65CE00ED0019 /* HWTicket.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A9E3421CEC65CE00ED0019 /* HWTicket.m */; };
+		69A9E34C1CECFF5F00ED0019 /* HWPaymentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A9E34B1CECFF5F00ED0019 /* HWPaymentViewController.m */; };
 		69FA9D491CE240960008F5C8 /* KakaoOpenSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69FA9D481CE240960008F5C8 /* KakaoOpenSDK.framework */; };
 		BA40239E1CE2170700C6C12A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BA40239D1CE2170700C6C12A /* main.m */; };
 		BA4023A11CE2170700C6C12A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4023A01CE2170700C6C12A /* AppDelegate.m */; };
@@ -44,6 +45,8 @@
 		69A9E33F1CEC59D600ED0019 /* HWResultTicketVeiwController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWResultTicketVeiwController.m; sourceTree = "<group>"; };
 		69A9E3411CEC65CE00ED0019 /* HWTicket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWTicket.h; sourceTree = "<group>"; };
 		69A9E3421CEC65CE00ED0019 /* HWTicket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWTicket.m; sourceTree = "<group>"; };
+		69A9E34A1CECFF5F00ED0019 /* HWPaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWPaymentViewController.h; sourceTree = "<group>"; };
+		69A9E34B1CECFF5F00ED0019 /* HWPaymentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWPaymentViewController.m; sourceTree = "<group>"; };
 		69FA9D481CE240960008F5C8 /* KakaoOpenSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KakaoOpenSDK.framework; path = CinemaParadise/KakaoOpenSDK.framework; sourceTree = "<group>"; };
 		BA4023991CE2170700C6C12A /* CinemaParadise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CinemaParadise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA40239D1CE2170700C6C12A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -117,6 +120,8 @@
 				69A9E33F1CEC59D600ED0019 /* HWResultTicketVeiwController.m */,
 				69A9E3411CEC65CE00ED0019 /* HWTicket.h */,
 				69A9E3421CEC65CE00ED0019 /* HWTicket.m */,
+				69A9E34A1CECFF5F00ED0019 /* HWPaymentViewController.h */,
+				69A9E34B1CECFF5F00ED0019 /* HWPaymentViewController.m */,
 				69A933B71CE79F9200126994 /* UIButton+Addition.h */,
 				69A933B81CE79F9200126994 /* UIButton+Addition.m */,
 				BA4023A51CE2170700C6C12A /* Main.storyboard */,
@@ -210,6 +215,7 @@
 				69A9E3431CEC65CE00ED0019 /* HWTicket.m in Sources */,
 				69A933AA1CE4D7CA00126994 /* HWEnrollTicketViewController.m in Sources */,
 				BA4023A41CE2170700C6C12A /* HWViewController.m in Sources */,
+				69A9E34C1CECFF5F00ED0019 /* HWPaymentViewController.m in Sources */,
 				BA4023A11CE2170700C6C12A /* AppDelegate.m in Sources */,
 				BA40239E1CE2170700C6C12A /* main.m in Sources */,
 				69A933A71CE4D78600126994 /* HWSearchingViewController.m in Sources */,
