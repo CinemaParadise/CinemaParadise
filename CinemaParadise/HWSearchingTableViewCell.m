@@ -17,7 +17,7 @@
     if (self) {
         [self setupViewComponents];
         [self setupConstraints];
-        [self setUnderLine];
+//        [self setUnderLine];
     }
     return self;
 }
@@ -40,6 +40,7 @@
     [self addSubview:self.button];
 }
 
+
 - (void)setupConstraints {
     NSDictionary *views = @{
                             @"title" : self.title,
@@ -48,13 +49,13 @@
                             };
     
     [self addConstraints:
-     [NSLayoutConstraint constraintsWithVisualFormat:@"V:|-50-[title(==70)]-20-[selectedOptionLabel(==60)]-50-|"
+     [NSLayoutConstraint constraintsWithVisualFormat:@"V:|-65-[title(==35)]-15-[selectedOptionLabel(==20)]-65-|"
                                                 options:0
                                                 metrics:nil
                                                   views:views]];
     
     [self addConstraints:
-     [NSLayoutConstraint constraintsWithVisualFormat:@"V:|-60-[button(==70)]-60-|"
+     [NSLayoutConstraint constraintsWithVisualFormat:@"V:|-80-[button(==40)]-80-|"
                                              options:0
                                              metrics:nil
                                                views:views]];
@@ -77,11 +78,11 @@
                                                views:views]];
 }
 
-- (void) setUnderLine {
-    UIView *lineView = [[UIView alloc] initWithFrame:CGRectMake(17, 43, self.contentView.bounds.size.width-33, 0.1)];
-    lineView.backgroundColor = [UIColor grayColor];
-    lineView.autoresizingMask = 0x3f;
-    [self.contentView addSubview:lineView];
-}
+//- (void) setUnderLine {
+//    UIView *lineView = [[UIView alloc] initWithFrame:CGRectMake(17, 43, self.contentView.bounds.size.width-33, 0.1)];
+//    lineView.backgroundColor = [UIColor grayColor];
+//    lineView.autoresizingMask = 0x3f;
+//    [self.contentView addSubview:lineView];
+//}
 
 @end

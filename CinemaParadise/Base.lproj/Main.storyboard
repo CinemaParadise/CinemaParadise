@@ -103,6 +103,24 @@
             </objects>
             <point key="canvasLocation" x="478" y="1824"/>
         </scene>
+        <!--Result Ticket Veiw Controller-->
+        <scene sceneID="LSP-g0-AZR">
+            <objects>
+                <viewController id="2Wx-Xt-L1B" customClass="ResultTicketVeiwController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TEy-b8-Yif"/>
+                        <viewControllerLayoutGuide type="bottom" id="aLW-hM-1y4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SX0-3q-8ag">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7bl-G4-qdu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="478" y="2487"/>
+        </scene>
         <!--사용자-->
         <scene sceneID="DDW-Lt-lkD">
             <objects>

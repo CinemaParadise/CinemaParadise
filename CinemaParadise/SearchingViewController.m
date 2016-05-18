@@ -9,6 +9,7 @@
 #import "SearchingViewController.h"
 #import "HWSearchingTableViewCell.h"
 #import "HWSearchingCategory.h"
+#import "ResultTicketVeiwController.h"
 
 @interface SearchingViewController ()
 
@@ -46,6 +47,10 @@
     [self.tableView setDelegate:self];
     [self.tableView setDataSource:self];
     
+    [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleSingleLine];
+    [self.tableView setSeparatorColor:[UIColor blackColor]];
+
+    
     [self.view addSubview:self.tableView];
     
     self.content = @[
@@ -60,6 +65,7 @@
     self.checkButton.backgroundColor = [UIColor blackColor];
     [self.checkButton setTitle:@"티켓 찾기" forState:UIControlStateNormal];
     [self.checkButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [self.checkButton addTarget:self action:@selector(checkButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
     self.checkButton.translatesAutoresizingMaskIntoConstraints = NO;
     [self.view addSubview:self.checkButton];
 
@@ -155,6 +161,15 @@
 {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
+
+
+
+- (void)checkButtonClicked:(UIButton*)sender
+{
+    ResultTicketVeiwController *controler = [[ResultTicketVeiwController alloc] init];
+    [self presentViewController:controler animated:YES completion:nil];
+}
+
 
 
 @end
