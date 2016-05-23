@@ -18,18 +18,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iTR-ac-V56">
-                                <rect key="frame" x="256" y="285" width="88" height="30"/>
-                                <state key="normal" title="Login Button"/>
+                                <rect key="frame" x="266" y="285" width="69" height="30"/>
+                                <state key="normal" title="로그인 하기">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
-                                    <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xVb-m1-Ci4"/>
+                                    <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="phA-b2-gHQ"/>
                                     <segue destination="QCx-O0-LGy" kind="modal" id="Z5H-jm-wWh"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="iTR-ac-V56" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3xv-Lg-enT"/>
-                            <constraint firstItem="iTR-ac-V56" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="L2q-NL-uCm"/>
+                            <constraint firstItem="iTR-ac-V56" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5bV-Iw-hAM"/>
+                            <constraint firstItem="iTR-ac-V56" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="MQl-sS-ze5"/>
                         </constraints>
                     </view>
                     <connections>
